@@ -1,0 +1,127 @@
+:root{
+    --primary-color:#E50914;
+    --secundary-color:#141414;
+}
+
+/* GENERICY ===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secundary-color);
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* HEADER ====================================================== */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--primary-color);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+header nav span.color:hover{
+    background-image: linear-gradient(to right,#b80a41 13%,#4e4ba8 50%,#6eb122 40%,#daac06 80%,#00938a 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* MAIN ==================================================== */
+
+.main-game {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url(../img/crystal-capa.jpg);
+    background-repeat: round;
+    background-size: cover;
+    height: 400px;
+    min-width: 392px;
+    font-size: 16px;
+}
+
+.main-game .descricao {
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+.main-game .title {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.main-game .container {
+    width: 70%;
+}
+/* BUTTON ====================================== */
+.btn {
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    color: #FFF;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.btn:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.btn i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* CARROSEL ===============================================*/
+.carrosel-jogos .subtitulo{
+    font-size: 18px;
+    color:#AAA;
+    margin: 2%;
+}
+
+.box-jogos {
+    display: block;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.carrosel-jogos {
+    margin-top: 15px;
+}
